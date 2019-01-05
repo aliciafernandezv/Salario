@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="~/js/JavaScript.js"></script>
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Empleados</h2>
+        <h6>Busqueda por Id de empleado</h6>
+        <input id="IdEmpleado" type="text" />
+        <input id="IdEmpleadoBuscar" type="button" value="Empleado" onclick="clickEmpleado()" />
+        <br />
+        <input id="ListEmpleado" type="button" value="Todos" onclick="clickEmpleadoTodos()" />
+
+        <table id="table" border="10px">
+
+            <thead>
+
+                <tr>
+                    <td padding="15px">ID</td>
+                    <td padding="15px">Nombre</td>
+                    <td padding="15px">Tipo de contrato</td>
+                    <td padding="15px">Rol ID</td>
+                    <td padding="15px">Nombre Rol</td>
+                    <td padding="15px">Descripcion Rol</td>
+                    <td padding="15px">Salario Hora</td>
+                    <td padding="15px">Salario Mensual</td>
+                    <td padding="15px">Salario Anual</td>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+    </div>
+
+</div>
